@@ -56,7 +56,7 @@ AND database_name=@SourceDB
 ) BackupChain
 INNER JOIN msdb.dbo.backupmediafamily bmf
 ON BackupChain.media_set_id=bmf.media_set_id
-ORDER BY backup_finish_date asc/
+ORDER BY backup_finish_date asc
 
 --Having now constructed the restore chain to use, if @ListFilesOnly is 1, we output the list of files and terminate the batch.
 
